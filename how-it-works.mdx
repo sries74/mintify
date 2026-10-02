@@ -1,0 +1,53 @@
+---
+title: "How ScatterBrain Converts Docs to PDF"
+sidebarTitle: "How It Works"
+description: "ScatterBrain crawls every page of an Atlas documentation site, renders it, and merges all pages into a single ordered PDF — automatically."
+---
+
+ScatterBrain is purpose-built for Atlas documentation sites. When you submit a URL, it follows the site's navigation to discover every page, renders each one in full, and assembles them into a coherent PDF in sidebar order. The entire process runs in your browser — no server uploads, no external processing, no waiting in a queue.
+
+## The Export Process
+
+ScatterBrain works through a five-stage pipeline every time you start an export:
+
+1. **URL Submission** — You provide the root URL of the Atlas documentation site. ScatterBrain validates the URL and confirms it points to a supported Atlas-hosted site before proceeding.
+
+2. **Site Discovery** — ScatterBrain reads the documentation's navigation structure to build a complete map of every page in the site. This ensures nothing is missed, even deeply nested sections.
+
+3. **Page Rendering** — Each page is rendered in full, including code blocks, tables, callouts, and images. ScatterBrain captures the page exactly as it appears in the browser.
+
+4. **PDF Assembly** — All rendered pages are merged into a single PDF in the same order they appear in the sidebar. Section breaks, headings, and formatting are preserved throughout.
+
+5. **Download** — The final file is delivered directly to your browser as a standard PDF download. No account or cloud storage required.
+
+## What's Preserved
+
+ScatterBrain is designed to produce a PDF that closely mirrors the experience of reading the live documentation. The following elements are captured and preserved:
+
+- **Page order** matching the sidebar navigation
+- **Headings and subheadings** at all levels
+- **Code blocks** with syntax formatting
+- **Tables** with their original structure and alignment
+- **Callout boxes** — notes, warnings, and tips — with their visual styling
+- **Images** embedded inline as they appear on the page
+- **Internal page links** converted to PDF bookmarks for easy navigation
+
+<Note>
+  ScatterBrain captures the documentation as it appears at export time. If the documentation is updated later, you can re-export to get the latest version.
+</Note>
+
+## Supported Content
+
+ScatterBrain captures all standard Atlas documentation content types:
+
+- **Prose and rich text** — paragraphs, lists, inline formatting
+- **Code samples** — fenced code blocks with language-specific syntax highlighting
+- **Tables** — structured data tables with headers and rows
+- **Images** — diagrams, screenshots, and other embedded media
+
+Some Atlas content types have limited support in the PDF output:
+
+- **Interactive widgets** — elements that require user interaction (e.g., tabbed interfaces, expandable sections) are captured in their default state.
+- **Live API consoles** — embedded API explorers and live-request panels are not interactive in the PDF; they appear as static representations where possible.
+
+If you need complete fidelity for a specific content type, see [Export Options](/configuration/export-options) for available configuration settings.

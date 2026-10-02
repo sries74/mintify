@@ -1,0 +1,40 @@
+---
+title: "Atlas Documentation Sites Supported by ScatterBrain"
+sidebarTitle: "Supported Sites"
+description: "ScatterBrain works with Atlas-hosted documentation sites. Learn which site types are supported and what to check if your site isn't recognized."
+---
+
+ScatterBrain is built specifically to export Atlas documentation sites. Atlas is a documentation platform used by many software companies to publish their developer and product docs. If your documentation is hosted on Atlas, ScatterBrain can export it.
+
+## What Is an Atlas Documentation Site?
+
+Atlas is a documentation hosting platform. Sites built on Atlas share a common structure — a sidebar navigation, structured pages, and a consistent URL pattern. ScatterBrain detects this structure to crawl and export the full site. Because ScatterBrain is purpose-built for Atlas, it understands how Atlas sites are organized and can reliably capture every page, in order, as a single PDF.
+
+## Supported Site Types
+
+ScatterBrain can export the following types of Atlas documentation:
+
+- **Publicly accessible Atlas documentation** with no login required
+- **Atlas sites with versioned documentation** — export one version at a time by submitting the URL for the version you need
+- **Sites with multiple language tabs** — export is language-specific based on the URL you provide
+- **Large documentation sites with 100+ pages** — ScatterBrain handles extensive sites without requiring any manual pagination
+
+## Unsupported or Limited Sites
+
+The following site types are not supported or have known limitations:
+
+- **Private or password-protected documentation** — ScatterBrain cannot authenticate with sites that require a login, SSO, or access token
+- **Documentation hosted on other platforms** — sites built on GitBook, Confluence, Notion, ReadMe, or other non-Atlas platforms are not compatible with ScatterBrain
+- **Sites that require JavaScript interaction to reveal navigation items** — if a site's sidebar only loads after user interaction (such as clicking to expand menus), ScatterBrain may not be able to discover all pages
+
+<Note>
+  If you're unsure whether your site is built on Atlas, try submitting the URL — ScatterBrain will tell you immediately if the site isn't compatible.
+</Note>
+
+## Checking Compatibility
+
+Not sure if your documentation site runs on Atlas? Look for these signals:
+
+- The URL structure often follows the pattern `docs.example.com`, which is common among Atlas-hosted sites
+- The site has a **persistent left sidebar** with nested, hierarchical navigation that remains visible as you browse
+- Page content includes **styled code blocks and callout components** (such as colored note, warning, and tip boxes) that are characteristic of Atlas's rendering pipeline

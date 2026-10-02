@@ -1,0 +1,55 @@
+---
+title: "Export Options: Customize Your ScatterBrain PDF"
+sidebarTitle: "Export Options"
+description: "Configure page size, orientation, font size, and layout before exporting your Atlas documentation to PDF with ScatterBrain."
+---
+
+ScatterBrain provides export options that let you control the look and layout of your PDF before you generate it. These settings are available on the export screen after you submit your documentation URL.
+
+## Available Options
+
+<ParamField query="page_size" type="string" default="A4">
+  Page size for the PDF. Accepted values: `A4`, `Letter`, `Legal`. Use `Letter` for US standard printing.
+</ParamField>
+
+<ParamField query="orientation" type="string" default="portrait">
+  Page orientation. Accepted values: `portrait`, `landscape`. Landscape works well for wide code-heavy documentation.
+</ParamField>
+
+<ParamField query="font_size" type="string" default="medium">
+  Base font size for body text. Accepted values: `small`, `medium`, `large`. Larger sizes improve readability when printing.
+</ParamField>
+
+<ParamField query="include_toc" type="boolean" default="true">
+  Whether to include an auto-generated table of contents at the beginning of the PDF.
+</ParamField>
+
+<ParamField query="include_cover" type="boolean" default="true">
+  Whether to include a cover page with the documentation site name and export date.
+</ParamField>
+
+## Applying Options
+
+<Steps>
+  <Step title="Submit Your URL">
+    Submit your Atlas documentation URL to ScatterBrain.
+  </Step>
+  <Step title="Adjust Settings">
+    On the export configuration screen, adjust the options as needed.
+  </Step>
+  <Step title="Export Your PDF">
+    Click **Export PDF** to generate the file with your settings.
+  </Step>
+</Steps>
+
+<Tip>
+  If you regularly export the same documentation site, ScatterBrain remembers your last-used settings for convenience.
+</Tip>
+
+## Recommended Settings
+
+Choose your settings based on how you plan to use the exported PDF:
+
+- **For printing:** Use `Letter` or `A4` page size, `portrait` orientation, and `large` font size for comfortable reading on paper.
+- **For digital reading:** Use `A4` page size, `portrait` orientation, and `medium` font size for a clean on-screen experience.
+- **For wide tables and code:** Use `landscape` orientation to prevent long lines from being cut off or wrapped unexpectedly.

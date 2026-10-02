@@ -1,47 +1,42 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Get Started with ScatterBrain in 3 Steps"
+sidebarTitle: "Quickstart"
+description: "Learn how to convert an Atlas documentation site to PDF in under a minute using ScatterBrain's simple URL-to-PDF workflow."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+ScatterBrain converts Atlas documentation to PDF in three quick steps. No account needed — open the tool, paste a URL, and download. From start to finish, most exports complete in under a minute.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
-
-    ```bash
-    npm install your-package
-    ```
+  <Step title="Open ScatterBrain">
+    Navigate to [scotterbrain.com](https://scotterbrain.com) in your browser. No sign-in or installation is required.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
-
-    ```bash
-    your-cli init
-    ```
+  <Step title="Paste Your Docs URL">
+    Enter the URL of any Atlas documentation site (e.g., `https://docs.example.com`) into the input field. ScatterBrain will validate the URL and detect the documentation structure, identifying every page available for export.
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
-
-    ```bash
-    your-cli start
-    ```
+  <Step title="Export to PDF">
+    Click the **Export PDF** button. ScatterBrain crawls every page in the documentation and bundles them into a single file. When complete, your PDF will download automatically to your device.
   </Step>
 </Steps>
 
 <Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
-
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
+  For large documentation sites, the export may take a minute or two. You can see live progress as each page is captured.
 </Tip>
+
+## What Happens Next
+
+Once the export is complete, your browser will download a single PDF file containing the entire documentation site. The PDF is assembled in sidebar order — the same sequence you'd navigate on the live site — so the structure feels familiar from the first page.
+
+Inside the PDF you'll find:
+
+- A **table of contents** generated from the documentation's navigation structure.
+- All **headings, subheadings, prose, code blocks, tables, and images** rendered as they appear in the browser.
+- **Internal links** converted to PDF bookmarks, so you can jump between sections without scrolling.
+
+<CardGroup cols={2}>
+  <Card title="PDF Output" icon="file-pdf" href="/guides/pdf-output">
+    Learn what the exported PDF contains and how it's structured.
+  </Card>
+  <Card title="Export Options" icon="sliders" href="/configuration/export-options">
+    Customize your export with cover pages, filters, and more.
+  </Card>
+</CardGroup>

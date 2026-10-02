@@ -1,0 +1,40 @@
+---
+title: "Select Which Pages to Include in Your PDF Export"
+sidebarTitle: "Page Selection"
+description: "Choose to export all pages from an Atlas documentation site or select a specific subset of pages before generating your PDF with ScatterBrain."
+---
+
+By default ScatterBrain exports every page it discovers in the documentation. If you only need a specific section, you can deselect pages before exporting to keep the PDF focused and smaller.
+
+## Default Behavior
+
+When you submit a URL, ScatterBrain crawls the documentation site and automatically discovers all available pages. Every discovered page is selected for export by default. The total page count is displayed on the export screen before the export begins, so you know exactly what will be included.
+
+## Selecting a Subset of Pages
+
+<Steps>
+  <Step title="Submit Your URL">
+    Submit your Atlas docs URL to ScatterBrain.
+  </Step>
+  <Step title="Open the Page List">
+    On the export screen, click **Select Pages** to open the full page list.
+  </Step>
+  <Step title="Deselect Unwanted Pages">
+    The page list mirrors the documentation sidebar. Uncheck any sections or individual pages you don't need in your export.
+  </Step>
+  <Step title="Apply and Export">
+    Click **Apply Selection**, then **Export PDF** to generate the file with only your chosen pages.
+  </Step>
+</Steps>
+
+## Selecting by Section
+
+You can check or uncheck entire sidebar groups at once rather than toggling pages individually. Checking a group selects all pages nested under it; unchecking a group deselects them all. This makes it easy to quickly include or exclude large sections of documentation without manually managing every page.
+
+<Note>
+  The table of contents in your PDF will only include the pages you selected. Deselected pages are not referenced.
+</Note>
+
+## Resetting to All Pages
+
+If you want to restore the default full selection after making changes, click the **Select All** button in the page list. This reselects every discovered page and returns you to the default export behavior.

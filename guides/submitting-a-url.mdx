@@ -1,0 +1,44 @@
+---
+title: "Submit an Atlas Documentation URL to ScatterBrain"
+sidebarTitle: "Submit a URL"
+description: "Learn how to find the correct Atlas documentation URL, enter it into ScatterBrain, and confirm the site is ready for PDF export."
+---
+
+Before ScatterBrain can export your docs to PDF, you need to provide the root URL of the Atlas documentation site. This guide explains how to find the right URL and what to expect once you submit it.
+
+## Finding the Right URL
+
+Not all URLs from a documentation site are suitable for export. Keep the following in mind before submitting:
+
+- Use the **root URL** of the documentation site, not a sub-page. For example, use `https://docs.example.com` rather than `https://docs.example.com/api/users`.
+- The URL should point to the **homepage** of the Atlas documentation — typically the landing page you see when you first open the docs.
+- If the documentation site has a **version selector**, navigate to the version you want to export and copy that version's URL. ScatterBrain will export only the version corresponding to the URL you provide.
+
+## Submitting Your URL
+
+<Steps>
+  <Step title="Copy the URL">
+    Navigate to the documentation site you want to export and copy the root URL from your browser's address bar.
+  </Step>
+  <Step title="Paste into ScatterBrain">
+    Open [scotterbrain.com](https://scotterbrain.com) and paste the URL into the input field.
+  </Step>
+  <Step title="Confirm Detection">
+    ScatterBrain will validate the URL and show you the number of pages it found. Review the count before proceeding to make sure the full site has been detected.
+  </Step>
+  <Step title="Proceed to Export">
+    Click **Export PDF** to start the conversion.
+  </Step>
+</Steps>
+
+<Warning>
+  Make sure the URL points to the documentation root, not a specific page. Submitting a sub-page URL may result in an incomplete export.
+</Warning>
+
+## URL Validation Errors
+
+If ScatterBrain cannot process the URL you submitted, it will display one of the following errors:
+
+- **"Not an Atlas site"** — The URL points to a site that is not built on Atlas. ScatterBrain only supports Atlas-hosted documentation. See [Supported Sites](/guides/supported-sites) for more information.
+- **"Site unavailable"** — The documentation site could not be reached. Check that the site is publicly accessible and not behind a login or firewall.
+- **"No pages found"** — ScatterBrain was able to reach the site but could not read its structure. Try submitting the root URL instead of a sub-page, and confirm the site is a standard Atlas documentation site.

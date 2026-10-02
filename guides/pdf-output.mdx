@@ -1,0 +1,53 @@
+---
+title: "Understanding Your ScatterBrain PDF Output"
+sidebarTitle: "PDF Output"
+description: "Learn what's included in your exported PDF, how pages are ordered, and how to get the most out of your ScatterBrain documentation export."
+---
+
+When ScatterBrain finishes exporting, you receive a single PDF file containing every page from the documentation site. This guide explains how the PDF is structured and how to navigate it.
+
+## PDF Structure
+
+ScatterBrain organizes the exported PDF to mirror the layout of the original documentation site:
+
+- Pages appear in the **same order as the documentation sidebar**, so the PDF reads in the same sequence you would follow when browsing the site.
+- A **table of contents** is generated at the beginning of the file, listing every page included in the export.
+- Each documentation page **starts on a new page** in the PDF, keeping sections cleanly separated.
+- **Section headers from the sidebar** become bookmark headings in the PDF, making it easy to jump directly to major topics.
+
+## Navigating the PDF
+
+Large documentation exports can span hundreds of pages. ScatterBrain includes several navigation aids to help you move through the file efficiently:
+
+- Use your **PDF reader's bookmark panel** to jump between sections without scrolling. Bookmarks mirror the sidebar hierarchy from the original site.
+- The **table of contents** at the front of the PDF includes clickable links in compatible PDF readers, letting you jump directly to any page.
+- **Internal links** within the documentation — such as "See also: Configuration" cross-references — are preserved as working internal PDF links wherever possible.
+
+<Tip>
+  Open your PDF in a reader that supports bookmarks (such as Adobe Acrobat or Preview on macOS) for the best navigation experience.
+</Tip>
+
+## File Naming
+
+ScatterBrain automatically names your exported file using the following format:
+
+```
+[site-name]-docs-[date].pdf
+```
+
+For example, a documentation site for Acme exported on January 15, 2024 would be saved as:
+
+```
+acme-docs-2024-01-15.pdf
+```
+
+You can rename the file after downloading it without affecting its contents.
+
+## Content Quality
+
+ScatterBrain renders documentation content as faithfully as possible in the PDF output:
+
+- **Code blocks** are rendered with monospace formatting, preserving indentation and syntax structure.
+- **Images** are included at full resolution as they appear on the documentation site.
+- **Tables** maintain column alignment so data-heavy reference pages remain readable.
+- **Callout boxes** — including notes, warnings, and tips — are styled distinctly in the PDF so they stand out from regular body text, just as they do in the browser.

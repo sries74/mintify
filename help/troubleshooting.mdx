@@ -1,0 +1,47 @@
+---
+title: "Troubleshoot ScatterBrain Export Issues"
+sidebarTitle: "Troubleshooting"
+description: "Diagnose and fix common issues with ScatterBrain, including URL errors, incomplete exports, blank pages, and slow export times."
+---
+
+Most issues with ScatterBrain exports are related to the documentation URL, site accessibility, or browser settings. This guide covers the most common problems and how to resolve them.
+
+## "Not an Atlas site" Error
+
+**Cause:** ScatterBrain detected that the URL does not point to an Atlas-hosted documentation site.
+
+**Resolution:** Confirm the site is built on Atlas. Common signals include structured sidebar navigation, Atlas-styled code blocks and callouts, and hosting at a `docs.` subdomain. If the site is on a different platform, it is not currently supported by ScatterBrain.
+
+## "Site unavailable" Error
+
+**Cause:** ScatterBrain could not reach the URL. The site may be down, or it may be restricted to certain IP addresses or regions.
+
+**Resolution:** Check that the documentation site is accessible from your own browser. If the site is private or requires VPN access, ScatterBrain cannot export it. Wait for any known outages to resolve before retrying.
+
+## Export Completes but Pages Are Missing
+
+**Cause:** Some documentation pages may not appear in the sidebar navigation ScatterBrain reads.
+
+**Resolution:** Confirm that the missing pages are linked from the sidebar, not just accessible via direct URL. ScatterBrain uses the sidebar structure to discover pages. Pages that are accessible only by direct link are not automatically included in the export.
+
+## Blank or Empty Pages in the PDF
+
+**Cause:** Certain Atlas page types with heavily interactive content — such as live API consoles and embedded widgets — may not render correctly as static PDF pages.
+
+**Resolution:** These pages will appear in the PDF but may show limited content. This is a known limitation for interactive pages. The surrounding documentation content will still export correctly.
+
+## Export Is Taking a Long Time
+
+**Cause:** Large documentation sites with many pages require more time to crawl and render.
+
+**Resolution:** This is expected behavior. A progress indicator shows each page as it is captured. Do not close the browser tab while the export is running. If the export appears stuck with no progress for more than 5 minutes, try refreshing the page and submitting the URL again.
+
+## PDF Download Does Not Start
+
+**Cause:** Browser pop-up blockers or download restrictions may prevent the file from saving to your device.
+
+**Resolution:** Check your browser's download settings and allow downloads from scotterbrain.com. If the download still doesn't start after adjusting your settings, try a different browser.
+
+<Note>
+  If you're experiencing an issue not covered here, contact ScatterBrain support with the URL you attempted to export and the error message you received.
+</Note>
